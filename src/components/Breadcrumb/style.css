@@ -1,0 +1,31 @@
+.breadcrumbs {
+  display: flex;
+  list-style: none;
+  margin: 1rem 0;
+}
+
+.breadcrumb-item {
+  position: relative;
+  line-height: 1.5rem;
+  color: var(--text-breadcrumbs-color);
+}
+
+.breadcrumb-item:last-child {
+  font-weight: 700;
+}
+
+.breadcrumb-item:not(:last-child) {
+  margin-right: .75rem;
+  padding-right: 1.25rem;
+}
+
+.breadcrumb-item:not(:last-child)::after {
+  content: "\203A";
+  position: absolute;
+  height: 2rem;
+  top: 50%;
+  right: 0;
+  margin: -1rem 0 0 0;
+  font-size: 1.5rem;
+  color: var(--text-breadcrumbs-color);
+}

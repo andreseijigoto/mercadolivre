@@ -1,0 +1,22 @@
+.input-block {
+  position: relative;
+}
+
+.input-block label {
+  font-size: 1.4rem;
+}
+
+.input-block input {
+  width: 100%;
+  height: 100%;
+  min-height: 2rem;
+  border-radius: .25rem;
+  background-color: var(--input-background-color);
+  border: 1px solid var(--input-line-color);
+  outline: 0;
+  padding: 0 .75rem;
+  font: 1rem Archivo;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  color: var(--input-text-color);
+}

@@ -1,0 +1,56 @@
+:root {
+  --primary-color: #FEE600;
+  --secondary-color: #3483fa;
+  --title-color: #000000;
+  --text-color: #000000;
+  --background-color: #E7E7E7;
+  --text-breadcrumbs-color: #666;
+  
+  --text-color: #333;
+  --text-color-in-secondary: #FFF;
+
+  --input-text-color: #333333;
+  --input-background-color: #FFF;
+  --input-line-color: #EFEFEF;
+  
+  --box-background-color: #FFFFFF;
+  --box-line-color: #EFEFEF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  color: var(--text-color);
+  background: var(--background-color);
+}
+
+body, input, button {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--title-color);
+}
+
+.container {
+  width: calc(100% - 2rem);
+  margin: 0 auto;
+}
+
+@media all and (min-width: 1024px){
+  .container {
+    width: calc(100% - 100px);
+    max-width: 990px;
+  }
+}
+
+@media all and (min-width: 1280px){
+  .container {
+    max-width: 1200px;
+  }
+}
